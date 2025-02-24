@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Durafloor</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+        .logo-container {
+            height: 50px;
+            display: flex;
+            align-items: center;
+        }
+        .logo-container img {
+            height: 100%;
+            width: auto;
+            object-fit: contain;
+        }
+        .dropdown-menu {
+            transform: translateY(-10px);
+            opacity: 0;
+            visibility: hidden;
+            transition: all 0.3s ease;
+        }
+        .group:hover .dropdown-menu {
+            transform: translateY(0);
+            opacity: 1;
+            visibility: visible;
+        }
+        .header-image {
+            position: relative;
+            height: 300px;
+            overflow: hidden;
+        }
+        .header-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.5s ease;
+        }
+        .header-image:hover img {
+            transform: scale(1.05);
+        }
+        .header-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: linear-gradient(to bottom, rgba(0,0,0,0.4), rgba(0,0,0,0.7));
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .dropdown-arrow {
+            transition: transform 0.3s ease;
+        }
+        .group:hover .dropdown-arrow {
+            transform: rotate(180deg);
+        }
+        .map-container {
+            position: relative;
+            padding-bottom: 100%;
+            height: 0;
+            overflow: hidden;
+        }
+        .map-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: 0;
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <nav class="bg-white p-4 shadow-md fixed w-full top-0 z-50">
+        <div class="container mx-auto flex justify-between items-center">
+            <a href="index.html" class="logo-container">
+                <img src="img/logo.png" alt="Durafloor Logo" class="h-full">
+            </a>
+            <ul class="flex space-x-8">
+                <li><a href="index.html" class="hover:text-blue-500 font-medium transition-colors">Home</a></li>
+                <li class="relative group">
+                    <a href="#" class="hover:text-blue-500 font-medium transition-colors flex items-center">
+                        Products
+                        <svg class="w-4 h-4 ml-1 dropdown-arrow" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                        </svg>
+                    </a>
+                    <ul class="dropdown-menu absolute bg-white shadow-xl mt-2 py-2 rounded-lg min-w-[200px] right-0">
+                        <li><a href="duratile-xl.html" class="hover:bg-blue-50 block px-6 py-2 transition-colors duration-200">Duratile XL</a></li>
+                        <li><a href="deluxe-tile.html" class="hover:bg-blue-50 block px-6 py-2 transition-colors duration-200">Deluxe Tile</a></li>
+                        <li><a href="vinyl-wood-tile.html" class="hover:bg-blue-50 block px-6 py-2 transition-colors duration-200">Vinyl Wood Tile</a></li>
+                        <li><a href="homogenous-vinyl-roll.html" class="hover:bg-blue-50 block px-6 py-2 transition-colors duration-200">Homogenous Vinyl Roll</a></li>
+                        <li><a href="r10-series.html" class="hover:bg-blue-50 block px-6 py-2 transition-colors duration-200">R10 Series</a></li>
+                    </ul>
+                </li>
+                <li><a href="portfolio.html" class="hover:text-blue-500 font-medium transition-colors">Portfolio</a></li>
+                <li><a href="contact.html" class="hover:text-blue-500 font-medium transition-colors">Contact Us</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="header-image mt-16">
+        <img src="img/factory.jpg" alt="Durafloor Factory" class="w-full">
+        <div class="header-overlay">
+            <h1 class="text-5xl font-bold text-white text-center">Contact Us</h1>
+        </div>
+    </div>
+
+    <main class="container mx-auto mt-12 px-4">
+        <div class="grid md:grid-cols-2 gap-8">
+            <div class="bg-white p-8 shadow-lg rounded-lg">
+                <h2 class="text-2xl font-bold text-gray-800 mb-6">Send us a Message</h2>
+                <form>
+                    <div class="mb-4">
+                        <label for="name" class="block text-gray-700 text-sm font-bold mb-2">Your Name:</label>
+                        <input type="text" id="name" name="name" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline">
+                    </div>
+                    <div class="mb-4">
+                        <label for="email" class="block text-gray-700 text-sm font-bold mb-2">Your Email:</label>
+                        <input type="email" id="email" name="email" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline">
+                    </div>
+                    <div class="mb-6">
+                        <label for="message" class="block text-gray-700 text-sm font-bold mb-2">Message:</label>
+                        <textarea id="message" name="message" rows="4" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"></textarea>
+                    </div>
+                    <div class="flex items-center justify-center">
+                        <button type="submit" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline transition-colors duration-200">
+                            Send Message
+                        </button>
+                    </div>
+                </form>
+            </div>
+            
+            <div class="bg-white p-8 shadow-lg rounded-lg">
+                <h2 class="text-2xl font-bold text-gray-800 mb-6">Find Us</h2>
+                <div class="map-container">
+                    <iframe 
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31873.845861645386!2d101.7250652!3d3.0301014!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31cdcb81da57ae79%3A0x97c56fd9bc130cd3!2sDurafloor%20(M)%20Sdn%20Bhd!5e0!3m2!1sen!2s!4v1708366789012!5m2!1sen!2s"
+                        allowfullscreen="" 
+                        loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="mt-20 bg-gray-800 text-white py-8">
+        <div class="container mx-auto text-center">
+            <p>&copy; 2025 Durafloor. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>

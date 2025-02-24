@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>R10 Series - Durafloor</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+        .logo-container {
+            height: 50px;
+            display: flex;
+            align-items: center;
+        }
+        .logo-container img {
+            height: 100%;
+            width: auto;
+            object-fit: contain;
+        }
+        .dropdown-menu {
+            transform: translateY(-10px);
+            opacity: 0;
+            visibility: hidden;
+            transition: all 0.3s ease;
+        }
+        .group:hover .dropdown-menu {
+            transform: translateY(0);
+            opacity: 1;
+            visibility: visible;
+        }
+        .dropdown-arrow {
+            transition: transform 0.3s ease;
+        }
+        .group:hover .dropdown-arrow {
+            transform: rotate(180deg);
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <nav class="bg-white p-4 shadow-md fixed w-full top-0 z-50">
+        <div class="container mx-auto flex justify-between items-center">
+            <a href="index.html" class="logo-container">
+                <img src="img/logo.png" alt="Durafloor Logo" class="h-full">
+            </a>
+            <ul class="flex space-x-8">
+                <li><a href="index.html" class="hover:text-blue-500 font-medium transition-colors">Home</a></li>
+                <li class="relative group">
+                    <a href="#" class="hover:text-blue-500 font-medium transition-colors flex items-center">
+                        Products
+                        <svg class="w-4 h-4 ml-1 dropdown-arrow" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                        </svg>
+                    </a>
+                    <ul class="dropdown-menu absolute bg-white shadow-xl mt-2 py-2 rounded-lg min-w-[200px] right-0">
+                        <li><a href="duratile-xl.html" class="hover:bg-blue-50 block px-6 py-2 transition-colors duration-200">Duratile XL</a></li>
+                        <li><a href="deluxe-tile.html" class="hover:bg-blue-50 block px-6 py-2 transition-colors duration-200">Deluxe Tile</a></li>
+                        <li><a href="vinyl-wood-tile.html" class="hover:bg-blue-50 block px-6 py-2 transition-colors duration-200">Vinyl Wood Tile</a></li>
+                        <li><a href="homogenous-vinyl-roll.html" class="hover:bg-blue-50 block px-6 py-2 transition-colors duration-200">Homogenous Vinyl Roll</a></li>
+                        <li><a href="r10-series.html" class="hover:bg-blue-50 block px-6 py-2 transition-colors duration-200">R10 Series</a></li>
+                    </ul>
+                </li>
+                <li><a href="portfolio.html" class="hover:text-blue-500 font-medium transition-colors">Portfolio</a></li>
+                <li><a href="contact.html" class="hover:text-blue-500 font-medium transition-colors">Contact Us</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="container mx-auto px-4 mt-24">
+        <h1 class="text-4xl font-bold text-center text-gray-800 mb-8">R10 Series</h1>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+            <!-- Placeholder for images -->
+            <div class="bg-gray-200 aspect-w-16 aspect-h-9"></div>
+            <div class="bg-gray-200 aspect-w-16 aspect-h-9"></div>
+            <div class="bg-gray-200 aspect-w-16 aspect-h-9"></div>
+        </div>
+        <p class="text-center mt-4">Detailed description of R10 Series will go here.</p>
+    </main>
+
+    <footer class="mt-20 bg-gray-800 text-white py-8">
+        <div class="container mx-auto text-center">
+            <p>&copy; 2025 Durafloor. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>

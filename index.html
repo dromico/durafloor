@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Durafloor Vinyl Flooring</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+        .dropdown-menu {
+            transform: translateY(-10px);
+            opacity: 0;
+            visibility: hidden;
+            transition: all 0.3s ease;
+        }
+        .group:hover .dropdown-menu {
+            transform: translateY(0);
+            opacity: 1;
+            visibility: visible;
+        }
+        .dropdown-arrow {
+            transition: transform 0.3s ease;
+        }
+        .group:hover .dropdown-arrow {
+            transform: rotate(180deg);
+        }
+        .image-hover {
+            transition: transform 0.5s ease;
+        }
+        .group:hover .image-hover {
+            transform: scale(1.05);
+        }
+        .image-overlay {
+            transition: opacity 0.3s ease;
+            background: linear-gradient(to bottom, rgba(0,0,0,0.2), rgba(0,0,0,0.6));
+        }
+        .logo-container {
+            height: 50px;
+            display: flex;
+            align-items: center;
+        }
+        .logo-container img {
+            height: 100%;
+            width: auto;
+            object-fit: contain;
+        }
+        .aspect-w-16 {
+            position: relative;
+            padding-bottom: 75%;
+        }
+        
+        .aspect-w-16 img {
+            position: absolute;
+            height: 100%;
+            width: 100%;
+            left: 0;
+            top: 0;
+            object-fit: cover;
+            object-position: center;
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <nav class="bg-white p-4 shadow-md fixed w-full top-0 z-50">
+        <div class="container mx-auto flex justify-between items-center">
+            <a href="index.html" class="logo-container">
+                <img src="img/logo.png" alt="Durafloor Logo" class="h-full">
+            </a>
+            <ul class="flex space-x-8">
+                <li><a href="index.html" class="hover:text-blue-500 font-medium transition-colors">Home</a></li>
+                <li class="relative group">
+                    <a href="#" class="hover:text-blue-500 font-medium transition-colors flex items-center">
+                        Products
+                        <svg class="w-4 h-4 ml-1 dropdown-arrow" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                        </svg>
+                    </a>
+                    <ul class="dropdown-menu absolute bg-white shadow-xl mt-2 py-2 rounded-lg min-w-[200px] right-0">
+                        <li><a href="duratile-xl.html" class="hover:bg-blue-50 block px-6 py-2 transition-colors duration-200">Duratile XL</a></li>
+                        <li><a href="deluxe-tile.html" class="hover:bg-blue-50 block px-6 py-2 transition-colors duration-200">Deluxe Tile</a></li>
+                        <li><a href="vinyl-wood-tile.html" class="hover:bg-blue-50 block px-6 py-2 transition-colors duration-200">Vinyl Wood Tile</a></li>
+                        <li><a href="homogenous-vinyl-roll.html" class="hover:bg-blue-50 block px-6 py-2 transition-colors duration-200">Homogenous Vinyl Roll</a></li>
+                        <li><a href="r10-series.html" class="hover:bg-blue-50 block px-6 py-2 transition-colors duration-200">R10 Series</a></li>
+                    </ul>
+                </li>
+                <li><a href="portfolio.html" class="hover:text-blue-500 font-medium transition-colors">Portfolio</a></li>
+                <li><a href="contact.html" class="hover:text-blue-500 font-medium transition-colors">Contact Us</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="container mx-auto px-4 mt-24">
+        <div class="max-w-4xl mx-auto text-center mb-16">
+            <h1 class="text-5xl font-bold text-gray-800 mb-6">WELCOME TO DURAFLOOR</h1>
+            <p class="text-lg text-gray-600 leading-relaxed">
+                DURAFLOOR, a distinguished Malaysian enterprise recognized as The House of Vinyl Flooring, has developed an innovative range of vinyl flooring that is proudly manufactured in Malaysia. Our exceptional vinyl flooring is utilized by esteemed establishments, including AEON, Sunway Pyramid, and Suria KLCC, among others. Our Durafloor products are meticulously engineered to facilitate easy cleaning and maintenance, ensuring convenience for users. Additionally, they are crafted to be both durable and cost-effective, thanks to their impressive longevity and remarkable resistance to wear and tear. Experience the superior quality and reliability of Durafloor for your flooring needs today!
+            </p>
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
+            <div class="group relative overflow-hidden rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 bg-white">
+                <div class="aspect-w-16">
+                    <img src="img/1.JPG" alt="Durafloor Vinyl Flooring 1" class="image-hover">
+                </div>
+                <div class="absolute inset-0 opacity-0 group-hover:opacity-100 image-overlay"></div>
+            </div>
+            <div class="group relative overflow-hidden rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 bg-white">
+                <div class="aspect-w-16">
+                    <img src="img/2.jpg" alt="Durafloor Vinyl Flooring 2" class="image-hover">
+                </div>
+                <div class="absolute inset-0 opacity-0 group-hover:opacity-100 image-overlay"></div>
+            </div>
+            <div class="group relative overflow-hidden rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 bg-white">
+                <div class="aspect-w-16">
+                    <img src="img/3.jpg" alt="Durafloor Vinyl Flooring 3" class="image-hover">
+                </div>
+                <div class="absolute inset-0 opacity-0 group-hover:opacity-100 image-overlay"></div>
+            </div>
+            <div class="group relative overflow-hidden rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 bg-white">
+                <div class="aspect-w-16" style="padding-bottom: 155%;">
+                    <img src="img/4.jpg" alt="Durafloor Vinyl Flooring 4" class="image-hover">
+                </div>
+                <div class="absolute inset-0 opacity-0 group-hover:opacity-100 image-overlay"></div>
+            </div>
+            <div class="group relative overflow-hidden rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 bg-white md:col-span-2">
+                <div class="aspect-w-16">
+                    <img src="img/5.jpg" alt="Durafloor Vinyl Flooring 5" class="image-hover">
+                </div>
+                <div class="absolute inset-0 opacity-0 group-hover:opacity-100 image-overlay"></div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="mt-20 bg-gray-800 text-white py-8">
+        <div class="container mx-auto text-center">
+            <p>&copy; 2025 Durafloor. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
