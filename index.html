@@ -4,136 +4,188 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Durafloor Vinyl Flooring</title>
+    <meta name="description" content="Durafloor - The House of Vinyl Flooring in Malaysia. Discover our high-quality vinyl flooring solutions used by major establishments across the country.">
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
-    <style>
-        .dropdown-menu {
-            transform: translateY(-10px);
-            opacity: 0;
-            visibility: hidden;
-            transition: all 0.3s ease;
-        }
-        .group:hover .dropdown-menu {
-            transform: translateY(0);
-            opacity: 1;
-            visibility: visible;
-        }
-        .dropdown-arrow {
-            transition: transform 0.3s ease;
-        }
-        .group:hover .dropdown-arrow {
-            transform: rotate(180deg);
-        }
-        .image-hover {
-            transition: transform 0.5s ease;
-        }
-        .group:hover .image-hover {
-            transform: scale(1.05);
-        }
-        .image-overlay {
-            transition: opacity 0.3s ease;
-            background: linear-gradient(to bottom, rgba(0,0,0,0.2), rgba(0,0,0,0.6));
-        }
-        .logo-container {
-            height: 50px;
-            display: flex;
-            align-items: center;
-        }
-        .logo-container img {
-            height: 100%;
-            width: auto;
-            object-fit: contain;
-        }
-        .aspect-w-16 {
-            position: relative;
-            padding-bottom: 75%;
-        }
-        
-        .aspect-w-16 img {
-            position: absolute;
-            height: 100%;
-            width: 100%;
-            left: 0;
-            top: 0;
-            object-fit: cover;
-            object-position: center;
-        }
-    </style>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
-<body class="bg-gray-50">
-    <nav class="bg-white p-4 shadow-md fixed w-full top-0 z-50">
-        <div class="container mx-auto flex justify-between items-center">
-            <a href="index.html" class="logo-container">
-                <img src="img/logo.png" alt="Durafloor Logo" class="h-full">
-            </a>
-            <ul class="flex space-x-8">
-                <li><a href="index.html" class="hover:text-blue-500 font-medium transition-colors">Home</a></li>
-                <li class="relative group">
-                    <a href="#" class="hover:text-blue-500 font-medium transition-colors flex items-center">
-                        Products
-                        <svg class="w-4 h-4 ml-1 dropdown-arrow" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
-                        </svg>
-                    </a>
-                    <ul class="dropdown-menu absolute bg-white shadow-xl mt-2 py-2 rounded-lg min-w-[200px] right-0">
-                        <li><a href="duratile-xl.html" class="hover:bg-blue-50 block px-6 py-2 transition-colors duration-200">Duratile XL</a></li>
-                        <li><a href="deluxe-tile.html" class="hover:bg-blue-50 block px-6 py-2 transition-colors duration-200">Deluxe Tile</a></li>
-                        <li><a href="vinyl-wood-tile.html" class="hover:bg-blue-50 block px-6 py-2 transition-colors duration-200">Vinyl Wood Tile</a></li>
-                        <li><a href="homogenous-vinyl-roll.html" class="hover:bg-blue-50 block px-6 py-2 transition-colors duration-200">Homogenous Vinyl Roll</a></li>
-                        <li><a href="r10-series.html" class="hover:bg-blue-50 block px-6 py-2 transition-colors duration-200">R10 Series</a></li>
-                    </ul>
-                </li>
-                <li><a href="portfolio.html" class="hover:text-blue-500 font-medium transition-colors">Portfolio</a></li>
-                <li><a href="contact.html" class="hover:text-blue-500 font-medium transition-colors">Contact Us</a></li>
-            </ul>
-        </div>
-    </nav>
+<body class="bg-bg-light" data-page="home">
+    <div id="header-container"></div>
 
-    <main class="container mx-auto px-4 mt-24">
-        <div class="max-w-4xl mx-auto text-center mb-16">
-            <h1 class="text-5xl font-bold text-gray-800 mb-6">WELCOME TO DURAFLOOR</h1>
-            <p class="text-lg text-gray-600 leading-relaxed">
-                DURAFLOOR, a distinguished Malaysian enterprise recognized as The House of Vinyl Flooring, has developed an innovative range of vinyl flooring that is proudly manufactured in Malaysia. Our exceptional vinyl flooring is utilized by esteemed establishments, including AEON, Sunway Pyramid, and Suria KLCC, among others. Our Durafloor products are meticulously engineered to facilitate easy cleaning and maintenance, ensuring convenience for users. Additionally, they are crafted to be both durable and cost-effective, thanks to their impressive longevity and remarkable resistance to wear and tear. Experience the superior quality and reliability of Durafloor for your flooring needs today!
-            </p>
-        </div>
+    <main>
+        <!-- Hero Section -->
+        <section class="hero mt-16">
+            <div class="hero-bg">
+                <img src="img/3.jpg" alt="Durafloor Premium Vinyl Flooring">
+            </div>
+            <div class="hero-overlay"></div>
+            <div class="container">
+                <div class="hero-content">
+                    <h1 class="hero-title">WELCOME TO<br>DURAFLOOR</h1>
+                    <p class="hero-subtitle">
+                        Malaysia's premier manufacturer of high-quality vinyl flooring solutions, trusted by establishments nationwide.
+                    </p>
+                    <div class="hero-buttons flex flex-col sm:flex-row gap-4 justify-center">
+                        <a href="portfolio.html" class="btn btn-primary">View Our Work</a>
+                        <a href="contact.html" class="btn btn-outline">Contact Us</a>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
-            <div class="group relative overflow-hidden rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 bg-white">
-                <div class="aspect-w-16">
-                    <img src="img/1.JPG" alt="Durafloor Vinyl Flooring 1" class="image-hover">
+        <!-- About Section -->
+        <section class="section bg-bg-white">
+            <div class="container">
+                <h2 class="section-title" data-animate>The House of Vinyl Flooring</h2>
+                <p class="section-subtitle" data-animate>
+                    DURAFLOOR, a distinguished Malaysian enterprise, has developed an innovative range of vinyl flooring that is proudly manufactured in Malaysia. Our exceptional vinyl flooring is utilized by esteemed establishments, including AEON, Sunway Pyramid, and Suria KLCC.
+                </p>
+                
+                <div class="grid grid-3 mt-12">
+                    <div class="card" data-animate>
+                        <div class="card-content text-center">
+                            <svg class="w-16 h-16 mx-auto mb-4 text-primary" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M19.928 9.629C19.741 9.262 19.347 9 18.911 9H5.089c-.436 0-.83.262-1.017.629l-3 7c-.223.52-.088 1.122.341 1.494C1.844 18.494 2.304 18.632 2.76 18.5l5.822-1.754c.388-.117.659-.477.659-.882V14h5.518v1.864c0 .405.271.765.659.882l5.822 1.754c.455.137.915-.006 1.347-.377.429-.372.564-.974.341-1.494l-3-7zM9.44 13H7.559c-.274 0-.52-.167-.622-.422l-.289-.722c-.101-.254-.347-.42-.622-.42H4.618c-.276 0-.521.167-.623.42l-.289.722C3.605 12.834 3.358 13 3.085 13H2.438l1.097-2.53c.069-.161.224-.264.396-.264h9.139c.171 0 .326.104.396.264L14.562 13h-.646c-.274 0-.52-.166-.622-.42l-.289-.722c-.101-.254-.347-.422-.622-.422h-1.409c-.275 0-.52.168-.622.422l-.289.722c-.102.254-.348.42-.623.42zm12.124 2.531l-1.097 2.531c-.069.159-.224.262-.396.262h-9.14c-.171 0-.326-.103-.396-.262l-1.097-2.53h.646c.274 0 .52.166.622.419l.289.724c.101.252.347.42.622.42h1.409c.274 0 .52-.168.622-.42l.289-.724c.101-.253.347-.42.622-.42h1.882c.274 0 .52.167.622.42l.289.724c.101.252.347.42.622.42h1.409c.274 0 .52-.168.622-.42l.289-.724c.101-.253.347-.42.622-.42h.647z"/>
+                            </svg>
+                            <h3 class="card-title">Easy Maintenance</h3>
+                            <p class="card-text">
+                                Our products are meticulously engineered to facilitate easy cleaning and maintenance, ensuring convenience for users.
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <div class="card" data-animate>
+                        <div class="card-content text-center">
+                            <svg class="w-16 h-16 mx-auto mb-4 text-primary" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M12 2C6.486 2 2 6.486 2 12s4.486 10 10 10 10-4.486 10-10S17.514 2 12 2zm0 18c-4.411 0-8-3.589-8-8s3.589-8 8-8 8 3.589 8 8-3.589 8-8 8z"></path>
+                                <path d="M13 7h-2v6h6v-2h-4z"></path>
+                            </svg>
+                            <h3 class="card-title">Long-Lasting Durability</h3>
+                            <p class="card-text">
+                                Our vinyl flooring is crafted to be both durable and cost-effective, thanks to its impressive longevity and remarkable resistance to wear and tear.
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <div class="card" data-animate>
+                        <div class="card-content text-center">
+                            <svg class="w-16 h-16 mx-auto mb-4 text-primary" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M12 2C6.486 2 2 6.486 2 12s4.486 10 10 10 10-4.486 10-10S17.514 2 12 2zm7.931 9h-2.764a14.67 14.67 0 0 0-1.792-6.243A8.013 8.013 0 0 1 19.931 11zM12.53 4.027c1.035 1.364 2.427 3.78 2.627 6.973H12.53V4.027zm-1.06 0v6.973H8.443c.2-3.193 1.592-5.61 2.627-6.973zM8.625 4.757A14.67 14.67 0 0 0 6.833 11H4.069a8.013 8.013 0 0 1 4.556-6.243zM4.069 13h2.764a14.67 14.67 0 0 0 1.792 6.243A8.013 8.013 0 0 1 4.069 13zm7.401 6.973c-1.035-1.364-2.427-3.78-2.627-6.973H11.47v6.973zm1.06 0v-6.973h3.027c-.2 3.193-1.592 5.61-2.627 6.973zm3.875-0.73A14.67 14.67 0 0 0 17.167 13h2.764a8.013 8.013 0 0 1-4.556 6.243z"></path>
+                            </svg>
+                            <h3 class="card-title">Versatile Applications</h3>
+                            <p class="card-text">
+                                Perfect for commercial and residential spaces, our flooring adapts to diverse environments with style and functionality.
+                            </p>
+                        </div>
+                    </div>
                 </div>
-                <div class="absolute inset-0 opacity-0 group-hover:opacity-100 image-overlay"></div>
             </div>
-            <div class="group relative overflow-hidden rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 bg-white">
-                <div class="aspect-w-16">
-                    <img src="img/2.jpg" alt="Durafloor Vinyl Flooring 2" class="image-hover">
+        </section>
+
+        <!-- Featured Products Section -->
+        <section class="section">
+            <div class="container">
+                <h2 class="section-title" data-animate>Featured Products</h2>
+                <div class="grid grid-3 mt-8">
+                    <div class="card" data-animate>
+                        <div class="card-image-container">
+                            <img src="img/1.JPG" alt="Duratile XL" class="card-image">
+                        </div>
+                        <div class="card-content">
+                            <h3 class="card-title">Duratile XL</h3>
+                            <p class="card-text">Premium large format vinyl tiles with authentic wood and stone designs.</p>
+                            <a href="duratile-xl.html" class="btn btn-sm btn-primary mt-4">Learn More</a>
+                        </div>
+                    </div>
+                    
+                    <div class="card" data-animate>
+                        <div class="card-image-container">
+                            <img src="img/2.jpg" alt="Deluxe Tile" class="card-image">
+                        </div>
+                        <div class="card-content">
+                            <h3 class="card-title">Deluxe Tile</h3>
+                            <p class="card-text">Luxury vinyl tiles with superior wear resistance for high-traffic commercial spaces.</p>
+                            <a href="deluxe-tile.html" class="btn btn-sm btn-primary mt-4">Learn More</a>
+                        </div>
+                    </div>
+                    
+                    <div class="card" data-animate>
+                        <div class="card-image-container">
+                            <img src="img/3.jpg" alt="Vinyl Wood Tile" class="card-image">
+                        </div>
+                        <div class="card-content">
+                            <h3 class="card-title">Vinyl Wood Tile</h3>
+                            <p class="card-text">Natural wood-look vinyl tiles that combine beauty with practical advantages.</p>
+                            <a href="vinyl-wood-tile.html" class="btn btn-sm btn-primary mt-4">Learn More</a>
+                        </div>
+                    </div>
                 </div>
-                <div class="absolute inset-0 opacity-0 group-hover:opacity-100 image-overlay"></div>
-            </div>
-            <div class="group relative overflow-hidden rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 bg-white">
-                <div class="aspect-w-16">
-                    <img src="img/3.jpg" alt="Durafloor Vinyl Flooring 3" class="image-hover">
+                
+                <div class="text-center mt-12">
+                    <a href="portfolio.html" class="btn btn-outline">View All Products</a>
                 </div>
-                <div class="absolute inset-0 opacity-0 group-hover:opacity-100 image-overlay"></div>
             </div>
-            <div class="group relative overflow-hidden rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 bg-white">
-                <div class="aspect-w-16" style="padding-bottom: 155%;">
-                    <img src="img/4.jpg" alt="Durafloor Vinyl Flooring 4" class="image-hover">
+        </section>
+
+        <!-- Showcase Section -->
+        <section class="section bg-bg-white">
+            <div class="container">
+                <h2 class="section-title" data-animate>Our Showcases</h2>
+                <p class="section-subtitle" data-animate>
+                    Explore some of our prestigious installations at renowned establishments across Malaysia.
+                </p>
+                
+                <div class="portfolio-grid mt-8">
+                    <div class="portfolio-item" data-animate>
+                        <img src="img/4.jpg" alt="AEON Installation" class="portfolio-image">
+                        <div class="portfolio-overlay">
+                            <h3 class="portfolio-title">AEON Shopping Mall</h3>
+                        </div>
+                    </div>
+                    
+                    <div class="portfolio-item" data-animate>
+                        <img src="img/5.jpg" alt="Office Space" class="portfolio-image">
+                        <div class="portfolio-overlay">
+                            <h3 class="portfolio-title">Corporate Office</h3>
+                        </div>
+                    </div>
+                    
+                    <div class="portfolio-item" data-animate>
+                        <img src="img/8.jpg" alt="Hotel Lobby" class="portfolio-image">
+                        <div class="portfolio-overlay">
+                            <h3 class="portfolio-title">Hotel Lobby</h3>
+                        </div>
+                    </div>
                 </div>
-                <div class="absolute inset-0 opacity-0 group-hover:opacity-100 image-overlay"></div>
-            </div>
-            <div class="group relative overflow-hidden rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 bg-white md:col-span-2">
-                <div class="aspect-w-16">
-                    <img src="img/5.jpg" alt="Durafloor Vinyl Flooring 5" class="image-hover">
+                
+                <div class="text-center mt-12">
+                    <a href="portfolio.html" class="btn btn-primary">View All Projects</a>
                 </div>
-                <div class="absolute inset-0 opacity-0 group-hover:opacity-100 image-overlay"></div>
             </div>
-        </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section class="section bg-secondary text-white">
+            <div class="container">
+                <div class="max-w-3xl mx-auto text-center">
+                    <h2 class="text-3xl md:text-4xl font-bold mb-6" data-animate>Ready to Transform Your Space?</h2>
+                    <p class="text-lg opacity-90 mb-8" data-animate>
+                        Experience the superior quality and reliability of Durafloor for your flooring needs today!
+                    </p>
+                    <a href="contact.html" class="btn btn-lg btn-primary" data-animate>Contact Us Now</a>
+                </div>
+            </div>
+        </section>
     </main>
 
-    <footer class="mt-20 bg-gray-800 text-white py-8">
-        <div class="container mx-auto text-center">
-            <p>&copy; 2025 Durafloor. All rights reserved.</p>
-        </div>
-    </footer>
+    <div id="footer-container"></div>
+
+    <!-- Scripts -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="js/components.js"></script>
+    <script src="js/main.js"></script>
 </body>
 </html>

@@ -4,104 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Us - Durafloor</title>
+    <meta name="description" content="Get in touch with Durafloor, Malaysia's premier vinyl flooring provider. Request a quote, ask questions, or schedule a consultation.">
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
-    <style>
-        .logo-container {
-            height: 50px;
-            display: flex;
-            align-items: center;
-        }
-        .logo-container img {
-            height: 100%;
-            width: auto;
-            object-fit: contain;
-        }
-        .dropdown-menu {
-            transform: translateY(-10px);
-            opacity: 0;
-            visibility: hidden;
-            transition: all 0.3s ease;
-        }
-        .group:hover .dropdown-menu {
-            transform: translateY(0);
-            opacity: 1;
-            visibility: visible;
-        }
-        .header-image {
-            position: relative;
-            height: 300px;
-            overflow: hidden;
-        }
-        .header-image img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            transition: transform 0.5s ease;
-        }
-        .header-image:hover img {
-            transform: scale(1.05);
-        }
-        .header-overlay {
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            background: linear-gradient(to bottom, rgba(0,0,0,0.4), rgba(0,0,0,0.7));
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
-        .dropdown-arrow {
-            transition: transform 0.3s ease;
-        }
-        .group:hover .dropdown-arrow {
-            transform: rotate(180deg);
-        }
-        .map-container {
-            position: relative;
-            padding-bottom: 100%;
-            height: 0;
-            overflow: hidden;
-        }
-        .map-container iframe {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            border: 0;
-        }
-    </style>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
-<body class="bg-gray-50">
-    <nav class="bg-white p-4 shadow-md fixed w-full top-0 z-50">
-        <div class="container mx-auto flex justify-between items-center">
-            <a href="index.html" class="logo-container">
-                <img src="img/logo.png" alt="Durafloor Logo" class="h-full">
-            </a>
-            <ul class="flex space-x-8">
-                <li><a href="index.html" class="hover:text-blue-500 font-medium transition-colors">Home</a></li>
-                <li class="relative group">
-                    <a href="#" class="hover:text-blue-500 font-medium transition-colors flex items-center">
-                        Products
-                        <svg class="w-4 h-4 ml-1 dropdown-arrow" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
-                        </svg>
-                    </a>
-                    <ul class="dropdown-menu absolute bg-white shadow-xl mt-2 py-2 rounded-lg min-w-[200px] right-0">
-                        <li><a href="duratile-xl.html" class="hover:bg-blue-50 block px-6 py-2 transition-colors duration-200">Duratile XL</a></li>
-                        <li><a href="deluxe-tile.html" class="hover:bg-blue-50 block px-6 py-2 transition-colors duration-200">Deluxe Tile</a></li>
-                        <li><a href="vinyl-wood-tile.html" class="hover:bg-blue-50 block px-6 py-2 transition-colors duration-200">Vinyl Wood Tile</a></li>
-                        <li><a href="homogenous-vinyl-roll.html" class="hover:bg-blue-50 block px-6 py-2 transition-colors duration-200">Homogenous Vinyl Roll</a></li>
-                        <li><a href="r10-series.html" class="hover:bg-blue-50 block px-6 py-2 transition-colors duration-200">R10 Series</a></li>
-                    </ul>
-                </li>
-                <li><a href="portfolio.html" class="hover:text-blue-500 font-medium transition-colors">Portfolio</a></li>
-                <li><a href="contact.html" class="hover:text-blue-500 font-medium transition-colors">Contact Us</a></li>
-            </ul>
-        </div>
-    </nav>
+<body class="bg-bg-light" data-page="contact">
+    <div id="header-container"></div>
 
     <div class="header-image mt-16">
         <img src="img/factory.jpg" alt="Durafloor Factory" class="w-full">
@@ -110,49 +22,119 @@
         </div>
     </div>
 
-    <main class="container mx-auto mt-12 px-4">
-        <div class="grid md:grid-cols-2 gap-8">
-            <div class="bg-white p-8 shadow-lg rounded-lg">
-                <h2 class="text-2xl font-bold text-gray-800 mb-6">Send us a Message</h2>
-                <form>
-                    <div class="mb-4">
-                        <label for="name" class="block text-gray-700 text-sm font-bold mb-2">Your Name:</label>
-                        <input type="text" id="name" name="name" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline">
+    <main class="section">
+        <div class="container">
+            <div class="grid grid-2 gap-8">
+                <div class="card" data-animate>
+                    <div class="card-content">
+                        <h2 class="text-2xl font-bold text-secondary mb-6">Send us a Message</h2>
+                        <form>
+                            <div class="form-group">
+                                <label for="name" class="form-label">Your Name:</label>
+                                <input type="text" id="name" name="name" class="form-control" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email" class="form-label">Your Email:</label>
+                                <input type="email" id="email" name="email" class="form-control" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="phone" class="form-label">Phone Number:</label>
+                                <input type="tel" id="phone" name="phone" class="form-control">
+                            </div>
+                            <div class="form-group">
+                                <label for="subject" class="form-label">Subject:</label>
+                                <select id="subject" name="subject" class="form-control">
+                                    <option value="general">General Inquiry</option>
+                                    <option value="quote">Request a Quote</option>
+                                    <option value="support">Technical Support</option>
+                                    <option value="partnership">Partnership Opportunity</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="message" class="form-label">Message:</label>
+                                <textarea id="message" name="message" rows="5" class="form-control form-textarea" required></textarea>
+                            </div>
+                            <div class="flex items-center justify-center">
+                                <button type="submit" class="btn btn-primary">
+                                    Send Message
+                                </button>
+                            </div>
+                        </form>
                     </div>
-                    <div class="mb-4">
-                        <label for="email" class="block text-gray-700 text-sm font-bold mb-2">Your Email:</label>
-                        <input type="email" id="email" name="email" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline">
+                </div>
+                
+                <div class="space-y-8">
+                    <div class="card" data-animate>
+                        <div class="card-content">
+                            <h2 class="text-2xl font-bold text-secondary mb-6">Our Office</h2>
+                            <div class="space-y-4">
+                                <div class="flex items-start">
+                                    <svg class="w-6 h-6 text-primary mt-1 mr-3 flex-shrink-0" fill="currentColor" viewBox="0 0 24 24">
+                                        <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"></path>
+                                    </svg>
+                                    <div>
+                                        <h3 class="font-semibold text-secondary">Address</h3>
+                                        <p class="text-text-light">123 Jalan Vinyl, Taman Industrial Park, 56100 Kuala Lumpur, Malaysia</p>
+                                    </div>
+                                </div>
+                                <div class="flex items-start">
+                                    <svg class="w-6 h-6 text-primary mt-1 mr-3 flex-shrink-0" fill="currentColor" viewBox="0 0 24 24">
+                                        <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"></path>
+                                    </svg>
+                                    <div>
+                                        <h3 class="font-semibold text-secondary">Email</h3>
+                                        <p class="text-text-light">info@durafloor.com.my</p>
+                                    </div>
+                                </div>
+                                <div class="flex items-start">
+                                    <svg class="w-6 h-6 text-primary mt-1 mr-3 flex-shrink-0" fill="currentColor" viewBox="0 0 24 24">
+                                        <path d="M20 15.5c-1.25 0-2.45-.2-3.57-.57a1.02 1.02 0 0 0-1.02.24l-2.2 2.2a15.045 15.045 0 0 1-6.59-6.59l2.2-2.21a.96.96 0 0 0 .25-1A11.36 11.36 0 0 1 8.5 4c0-.55-.45-1-1-1H4c-.55 0-1 .45-1 1 0 9.39 7.61 17 17 17 .55 0 1-.45 1-1v-3.5c0-.55-.45-1-1-1zM19 12h2a9 9 0 0 0-9-9v2c3.87 0 7 3.13 7 7z"></path>
+                                        <path d="M15 12h2c0-2.76-2.24-5-5-5v2c1.66 0 3 1.34 3 3z"></path>
+                                    </svg>
+                                    <div>
+                                        <h3 class="font-semibold text-secondary">Phone</h3>
+                                        <p class="text-text-light">+60 3-1234 5678</p>
+                                    </div>
+                                </div>
+                                <div class="flex items-start">
+                                    <svg class="w-6 h-6 text-primary mt-1 mr-3 flex-shrink-0" fill="currentColor" viewBox="0 0 24 24">
+                                        <path d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8z"></path>
+                                        <path d="M12.5 7H11v6l5.25 3.15.75-1.23-4.5-2.67z"></path>
+                                    </svg>
+                                    <div>
+                                        <h3 class="font-semibold text-secondary">Business Hours</h3>
+                                        <p class="text-text-light">Monday to Friday: 9:00 AM - 6:00 PM</p>
+                                        <p class="text-text-light">Saturday: 9:00 AM - 1:00 PM</p>
+                                        <p class="text-text-light">Sunday: Closed</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <div class="mb-6">
-                        <label for="message" class="block text-gray-700 text-sm font-bold mb-2">Message:</label>
-                        <textarea id="message" name="message" rows="4" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"></textarea>
+                    
+                    <div class="card" data-animate>
+                        <div class="card-content">
+                            <h2 class="text-2xl font-bold text-secondary mb-6">Find Us</h2>
+                            <div class="map-container">
+                                <iframe 
+                                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31873.845861645386!2d101.7250652!3d3.0301014!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31cdcb81da57ae79%3A0x97c56fd9bc130cd3!2sDurafloor%20(M)%20Sdn%20Bhd!5e0!3m2!1sen!2s!4v1708366789012!5m2!1sen!2s"
+                                    allowfullscreen="" 
+                                    loading="lazy"
+                                    referrerpolicy="no-referrer-when-downgrade">
+                                </iframe>
+                            </div>
+                        </div>
                     </div>
-                    <div class="flex items-center justify-center">
-                        <button type="submit" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline transition-colors duration-200">
-                            Send Message
-                        </button>
-                    </div>
-                </form>
-            </div>
-            
-            <div class="bg-white p-8 shadow-lg rounded-lg">
-                <h2 class="text-2xl font-bold text-gray-800 mb-6">Find Us</h2>
-                <div class="map-container">
-                    <iframe 
-                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31873.845861645386!2d101.7250652!3d3.0301014!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31cdcb81da57ae79%3A0x97c56fd9bc130cd3!2sDurafloor%20(M)%20Sdn%20Bhd!5e0!3m2!1sen!2s!4v1708366789012!5m2!1sen!2s"
-                        allowfullscreen="" 
-                        loading="lazy"
-                        referrerpolicy="no-referrer-when-downgrade">
-                    </iframe>
                 </div>
             </div>
         </div>
     </main>
 
-    <footer class="mt-20 bg-gray-800 text-white py-8">
-        <div class="container mx-auto text-center">
-            <p>&copy; 2025 Durafloor. All rights reserved.</p>
-        </div>
-    </footer>
+    <div id="footer-container"></div>
+
+    <!-- Scripts -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="js/components.js"></script>
+    <script src="js/main.js"></script>
 </body>
 </html>

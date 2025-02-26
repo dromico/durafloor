@@ -4,81 +4,232 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Duratile XL - Durafloor</title>
+    <meta name="description" content="Duratile XL - Premium large format vinyl tiles with authentic wood and stone designs from Durafloor Malaysia.">
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
-    <style>
-        .logo-container {
-            height: 50px;
-            display: flex;
-            align-items: center;
-        }
-        .logo-container img {
-            height: 100%;
-            width: auto;
-            object-fit: contain;
-        }
-        .dropdown-menu {
-            transform: translateY(-10px);
-            opacity: 0;
-            visibility: hidden;
-            transition: all 0.3s ease;
-        }
-        .group:hover .dropdown-menu {
-            transform: translateY(0);
-            opacity: 1;
-            visibility: visible;
-        }
-        .dropdown-arrow {
-            transition: transform 0.3s ease;
-        }
-        .group:hover .dropdown-arrow {
-            transform: rotate(180deg);
-        }
-    </style>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
-<body class="bg-gray-50">
-    <nav class="bg-white p-4 shadow-md fixed w-full top-0 z-50">
-        <div class="container mx-auto flex justify-between items-center">
-            <a href="index.html" class="logo-container">
-                <img src="img/logo.png" alt="Durafloor Logo" class="h-full">
-            </a>
-            <ul class="flex space-x-8">
-                <li><a href="index.html" class="hover:text-blue-500 font-medium transition-colors">Home</a></li>
-                <li class="relative group">
-                    <a href="#" class="hover:text-blue-500 font-medium transition-colors flex items-center">
-                        Products
-                        <svg class="w-4 h-4 ml-1 dropdown-arrow" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
-                        </svg>
-                    </a>
-                    <ul class="dropdown-menu absolute bg-white shadow-xl mt-2 py-2 rounded-lg min-w-[200px] right-0">
-                        <li><a href="duratile-xl.html" class="hover:bg-blue-50 block px-6 py-2 transition-colors duration-200">Duratile XL</a></li>
-                        <li><a href="deluxe-tile.html" class="hover:bg-blue-50 block px-6 py-2 transition-colors duration-200">Deluxe Tile</a></li>
-                        <li><a href="vinyl-wood-tile.html" class="hover:bg-blue-50 block px-6 py-2 transition-colors duration-200">Vinyl Wood Tile</a></li>
-                        <li><a href="homogenous-vinyl-roll.html" class="hover:bg-blue-50 block px-6 py-2 transition-colors duration-200">Homogenous Vinyl Roll</a></li>
-                        <li><a href="r10-series.html" class="hover:bg-blue-50 block px-6 py-2 transition-colors duration-200">R10 Series</a></li>
-                    </ul>
-                </li>
-                <li><a href="portfolio.html" class="hover:text-blue-500 font-medium transition-colors">Portfolio</a></li>
-                <li><a href="contact.html" class="hover:text-blue-500 font-medium transition-colors">Contact Us</a></li>
-            </ul>
-        </div>
-    </nav>
+<body class="bg-bg-light" data-page="products">
+    <div id="header-container"></div>
 
-    <main class="container mx-auto px-4 mt-24">
-        <h1 class="text-4xl font-bold text-center text-gray-800 mb-8">Duratile XL</h1>
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
-            <!-- Placeholder for images -->
-            <div class="bg-gray-200 aspect-w-16 aspect-h-9"></div>
-            <div class="bg-gray-200 aspect-w-16 aspect-h-9"></div>
-            <div class="bg-gray-200 aspect-w-16 aspect-h-9"></div>
+    <div class="header-image mt-16">
+        <img src="img/1.JPG" alt="Duratile XL" class="w-full">
+        <div class="header-overlay">
+            <h1 class="text-5xl font-bold text-white text-center">Duratile XL</h1>
         </div>
-        <p class="text-center mt-4">Detailed description of Duratile XL will go here.</p>
+    </div>
+
+    <main>
+        <!-- Product Overview -->
+        <section class="section">
+            <div class="container">
+                <div class="max-w-4xl mx-auto">
+                    <h2 class="section-title" data-animate>Premium Large Format Vinyl Tiles</h2>
+                    <p class="section-subtitle" data-animate>
+                        Duratile XL offers luxurious large format vinyl tiles that replicate the authentic look of natural wood and stone with superior durability and easy maintenance.
+                    </p>
+                </div>
+                
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-12 mt-12">
+                    <div data-animate>
+                        <img src="img/1.JPG" alt="Duratile XL Sample" class="rounded-lg shadow-lg w-full">
+                    </div>
+                    <div class="space-y-6" data-animate>
+                        <div>
+                            <h3 class="text-xl font-bold text-secondary">Key Features</h3>
+                            <ul class="mt-4 space-y-3">
+                                <li class="flex items-start">
+                                    <svg class="w-5 h-5 text-primary mt-1 mr-3 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                                        <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                                    </svg>
+                                    <span>Large format design for fewer seams and premium appearance</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <svg class="w-5 h-5 text-primary mt-1 mr-3 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                                        <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                                    </svg>
+                                    <span>Authentic wood and stone textures and patterns</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <svg class="w-5 h-5 text-primary mt-1 mr-3 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                                        <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                                    </svg>
+                                    <span>Superior wear layer for high-traffic commercial spaces</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <svg class="w-5 h-5 text-primary mt-1 mr-3 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                                        <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                                    </svg>
+                                    <span>Easy installation with click-lock or glue-down options</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <svg class="w-5 h-5 text-primary mt-1 mr-3 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                                        <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                                    </svg>
+                                    <span>Water-resistant and suitable for bathrooms and kitchens</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <svg class="w-5 h-5 text-primary mt-1 mr-3 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                                        <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                                    </svg>
+                                    <span>Low maintenance with stain-resistant surface</span>
+                                </li>
+                            </ul>
+                        </div>
+                        
+                        <div>
+                            <h3 class="text-xl font-bold text-secondary">Technical Specifications</h3>
+                            <div class="mt-4 grid grid-cols-2 gap-4">
+                                <div>
+                                    <p class="font-semibold">Dimensions:</p>
+                                    <p class="text-text-light">1220mm x 180mm</p>
+                                </div>
+                                <div>
+                                    <p class="font-semibold">Thickness:</p>
+                                    <p class="text-text-light">5mm</p>
+                                </div>
+                                <div>
+                                    <p class="font-semibold">Wear Layer:</p>
+                                    <p class="text-text-light">0.5mm</p>
+                                </div>
+                                <div>
+                                    <p class="font-semibold">Finish:</p>
+                                    <p class="text-text-light">Embossed</p>
+                                </div>
+                                <div>
+                                    <p class="font-semibold">Installation:</p>
+                                    <p class="text-text-light">Click-lock or Glue-down</p>
+                                </div>
+                                <div>
+                                    <p class="font-semibold">Warranty:</p>
+                                    <p class="text-text-light">15 Years Commercial</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Applications -->
+        <section class="section bg-bg-white">
+            <div class="container">
+                <h2 class="section-title" data-animate>Ideal Applications</h2>
+                
+                <div class="grid grid-3 mt-8">
+                    <div class="card" data-animate>
+                        <div class="card-content text-center">
+                            <svg class="w-16 h-16 mx-auto mb-4 text-primary" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M10 3H4a1 1 0 0 0-1 1v6a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V4a1 1 0 0 0-1-1zm10 0h-6a1 1 0 0 0-1 1v6a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V4a1 1 0 0 0-1-1zM10 13H4a1 1 0 0 0-1 1v6a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1v-6a1 1 0 0 0-1-1zm8 0h-4a3 3 0 0 0-3 3v4a3 3 0 0 0 3 3h4a3 3 0 0 0 3-3v-4a3 3 0 0 0-3-3z"></path>
+                            </svg>
+                            <h3 class="card-title">Retail Spaces</h3>
+                            <p class="card-text">
+                                Ideal for high-traffic retail environments where durability and aesthetic appeal are essential.
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <div class="card" data-animate>
+                        <div class="card-content text-center">
+                            <svg class="w-16 h-16 mx-auto mb-4 text-primary" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M19 7h-8v7H3V5H1v15h2v-3h18v3h2V12a5 5 0 0 0-5-5zm3 8h-8V7a3 3 0 0 1 3-3a3 3 0 0 1 3 3z"></path>
+                            </svg>
+                            <h3 class="card-title">Hospitality</h3>
+                            <p class="card-text">
+                                Perfect for hotels, restaurants, and entertainment venues requiring elegant yet practical flooring solutions.
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <div class="card" data-animate>
+                        <div class="card-content text-center">
+                            <svg class="w-16 h-16 mx-auto mb-4 text-primary" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M20 9v11a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V9h16zm-1-7a1 1 0 0 1 1 1v3H4V3a1 1 0 0 1 1-1h3V0h2v2h6V0h2v2h1z"></path>
+                            </svg>
+                            <h3 class="card-title">Corporate Offices</h3>
+                            <p class="card-text">
+                                Enhances corporate environments with sophisticated aesthetics while providing practical benefits like sound absorption.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Color Options -->
+        <section class="section">
+            <div class="container">
+                <h2 class="section-title" data-animate>Available Colors & Patterns</h2>
+                <p class="section-subtitle" data-animate>
+                    Choose from our wide range of authentic wood and stone designs to match your interior style.
+                </p>
+                
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-4 mt-8">
+                    <div class="card" data-animate>
+                        <div class="card-image-container">
+                            <img src="img/2.jpg" alt="Oak Natural" class="card-image">
+                        </div>
+                        <div class="card-content text-center">
+                            <h3 class="card-title">Oak Natural</h3>
+                        </div>
+                    </div>
+                    
+                    <div class="card" data-animate>
+                        <div class="card-image-container">
+                            <img src="img/3.jpg" alt="Rustic Pine" class="card-image">
+                        </div>
+                        <div class="card-content text-center">
+                            <h3 class="card-title">Rustic Pine</h3>
+                        </div>
+                    </div>
+                    
+                    <div class="card" data-animate>
+                        <div class="card-image-container">
+                            <img src="img/4.jpg" alt="Weathered Grey" class="card-image">
+                        </div>
+                        <div class="card-content text-center">
+                            <h3 class="card-title">Weathered Grey</h3>
+                        </div>
+                    </div>
+                    
+                    <div class="card" data-animate>
+                        <div class="card-image-container">
+                            <img src="img/5.jpg" alt="Marble White" class="card-image">
+                        </div>
+                        <div class="card-content text-center">
+                            <h3 class="card-title">Marble White</h3>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="text-center mt-12">
+                    <a href="contact.html" class="btn btn-primary">Request Samples</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section class="section bg-secondary text-white">
+            <div class="container">
+                <div class="max-w-3xl mx-auto text-center">
+                    <h2 class="text-3xl md:text-4xl font-bold mb-6" data-animate>Ready to Transform Your Space?</h2>
+                    <p class="text-lg opacity-90 mb-8" data-animate>
+                        Contact us today to discuss your project requirements and discover how Duratile XL can enhance your space.
+                    </p>
+                    <a href="contact.html" class="btn btn-lg btn-primary" data-animate>Get in Touch</a>
+                </div>
+            </div>
+        </section>
     </main>
 
-    <footer class="mt-20 bg-gray-800 text-white py-8">
-        <div class="container mx-auto text-center">
-            <p>&copy; 2025 Durafloor. All rights reserved.</p>
-        </div>
-    </footer>
+    <div id="footer-container"></div>
+
+    <!-- Scripts -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="js/components.js"></script>
+    <script src="js/main.js"></script>
 </body>
 </html>
